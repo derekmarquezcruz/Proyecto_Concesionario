@@ -92,7 +92,9 @@ public class ConcesionarioVista{
 
         System.out.println("3. Año:");
 
-        return pedirInt("Por como lo quieres buscar?:");
+        System.out.println("4. Salir");
+
+        return pedirInt("Elije una de estas opciones:");
     }
 
     /**
