@@ -165,6 +165,10 @@ public class ConcesionarioControlador{
                 }
             }
         }
+        if (opcion == 4){
+            vista.mensaje("Saliste, volveras al menu.");
+            return; // si elije la opcion "4" saldra de la opcion de busqueda y volvera al menu
+        }
 
         // Mostrar los resultados que se encontraron
         vista.mostrarCoches(resultado);
@@ -179,7 +183,7 @@ public class ConcesionarioControlador{
         // Comprobamos si ya existe un cliente con el mismo DNI
         for (ClienteDTO ClienteDTO : clientes){
             if (ClienteDTO.getDni().equalsIgnoreCase(nuevo.getDni())){ // Comparamos el DNI del cliente actual con el DNI del nuevo cliente que queremos registrar.
-                vista.mensajeErr("El DNI ya esta repetido en el sistema");
+                vista.mensajeErr("El DNI ya esta repetido en el sistema.");
                 return; //sale de la funcion si ya existe
             }
 
