@@ -18,12 +18,20 @@ public class CocheDTO{
         return matricula;
     }
 
+    public int getKilometros() {
+        return kilometros;
+    }
+
     public double getPrecio(){
         return precio;
     }
 
     public int getAnio(){
         return anio;
+    }
+
+    public String getModelo() {
+        return modelo;
     }
 
     //constructor
@@ -39,4 +47,7 @@ public class CocheDTO{
     public String toString(){
         return  marca + " " + modelo + " -- (" + matricula + ") -- " + "Precio: " + precio + "€" + " -- " + "Año:" + anio + " -- " + "Kilometros:" + kilometros + "km";
     }
+
+
+
 }

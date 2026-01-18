@@ -11,6 +11,13 @@ public class ClienteDTO{
         return dni;
     }
 
+    public String getNombre() {
+        return  nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
 
     //constructor
     public ClienteDTO(String dni, String nombre, String telefono){
@@ -22,4 +29,7 @@ public class ClienteDTO{
     public String toString(){
         return nombre + " (DNI: " + dni + ", Tel: " + telefono + ")";
     }
+
+
+
 }
